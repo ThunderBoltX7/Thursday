@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8" />
+    <title>Thursday: AI Assistant Chatbot</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+</head>
+<body>
+    <div class="main-container">
+        <header>
+            <h1>Thursday</h1>
+            <div class="theme-switcher">
+                <label>
+                    <input type="checkbox" id="theme-toggle" />
+                    <span class="slider"></span>
+                </label>
+                <span id="theme-label">Light</span>
+            </div>
+        </header>
+        <div class="chatbox" id="chatbox">
+            <div class="messages" id="messages"></div>
+            <form id="chat-form">
+                <input type="text" id="user-input" autocomplete="off" placeholder="Ask Thursday anything..." />
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='main.js') }}"></script>
+</body>
+</html>
